@@ -7,7 +7,7 @@ To calculate directly standardized (age and/or sex standardized) rates for PHUs 
 1. Standard population: An Excel dataset containing the 2011 Canadian Population by age (numeric) and/or sex (string)
 2. PHU population estimates (2010-2016): An Excel dataset containing population estimates by PHU (string), age (numeric) and/or sex (string)
 3. (Optional) PHU population projections (2017): An Excel dataset containing PHU population projections by PHU (string), age (numeric) and/or sex (string)
-4. Case data: An Excel dataset containing individual or aggregate level case data by PHU (string), age (numeric) and/or sex (string), with ident
+4. Case data: An Excel dataset containing individual or aggregate level case data by PHU (string), age (numeric) and/or sex (string), with an unique identifier
 
 ## Methods:
 ### Standard population:
