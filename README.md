@@ -1,5 +1,5 @@
 # Direct standardization 
-## By age and/or sex using the Faye and Feuer (1997) method <br/>
+### By age and/or sex using the Faye and Feuer (1997) method <br/>
 ## Aim:
 To calculate directly standardized (age and/or sex standardized) rates for PHUs and Ontario using the 2011 Canadian Population as the standard population.
 
