@@ -1,4 +1,4 @@
-# stata-distrates
+# Direct standardization by age and/or sex using the Faye and Feuer (1997) method to calculate CIs 
 ## Aim:
 To calculate directly standardized (age and/or sex standardized) rates for PHUs and Ontario using the 2011 Canadian Population as the standard population.
 
