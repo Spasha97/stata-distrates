@@ -248,6 +248,9 @@ qui {
 	****************************************************************************************************************************************
 	****************************************************************************************************************************************
 	/* Direct standardization */
+	
+	// display rates per 100,000, show 95% CIs, and (optional) separate by sex
+	// output case counts, study population count, crude rate, adjusted rate, lower CI, upper CI
 	local mydistrateopts  "mult(100000) format($rateformat) level(${cilevel}) sepby(${sex}) list(cases N crude rateadj lb_gam ub_gam)"
 
 	// Perform direct standardization for local PHU
@@ -257,6 +260,8 @@ qui {
 		// Age standardize if sexvar is missing, otherwise age and sex standardize
 		noi: di "Rates for: " "$localphu"
 		if !missing("${sexvar}") {
+			// standardize rates (nuerator "cases"; denominator: "popvar"; standard population file "geo") for region "localphu"
+			// standardize by age and/or sex for every year
 			noi: distrate cases ${popvar} using pop if geo2=="$localphu", standstrata(age_catcustom ${sexvar}) by(${yearvar}) `mydistrateopts' saving(localrates)
 		}
 		else {
