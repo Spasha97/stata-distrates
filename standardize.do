@@ -287,7 +287,6 @@ qui {
 	// Export PHU data to Excel. Columns will start from localstartcell
 	use localrates, clear
 	 	errorvalues
-	 	global rates rates
 		export excel using "${finaloutputexcel}", sheet("rates") cell("${localstartcell}") firstrow(varlabel) sheetreplace
 
 	// Export Ontario data to Excel. Columns will start from localstartcell
