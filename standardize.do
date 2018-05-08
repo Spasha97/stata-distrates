@@ -1,8 +1,6 @@
 /*
 Author: Mathew Roy (Created March 27,2018; Updated May 7, 2018)
-Direct standardization lets us remove the distortion caused by the different age distributions. 
-The adjusted rate is defined as the weighted sum of the crude rates, where the weights are given by the standard distribution as per the 2011 Canadian population. 
-This syntax uses the Faye and Feuer (1997) method to calculate CIs for the adjusted rates
+This syntax uses the Faye and Feuer (1997) method to calculate CIs for the adjusted rates.
 */
 ****************************************************************************************************************************************
 ****************************************************************************************************************************************
